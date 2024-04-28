@@ -4,7 +4,7 @@ local Window = OrionLib:MakeWindow({Name = "V1rtual Hub - FE ScriptHub", HidePre
 IntroText = "Made by Benny"})
 
 OrionLib:MakeNotification({
-	Name = "Tahnks for using!",
+	Name = "Thanks for using!",
 	Content = "Made by Benny",
 	Image = "rbxassetid://4483345998",
 	Time = 5
@@ -84,8 +84,6 @@ Local:AddButton({
               print("Character has been respawned")
       end    
 })
-
-local Local = game.Players.LocalPlayer
 
 Local:AddButton({
 	Name = "Rejoin",
