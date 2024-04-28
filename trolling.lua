@@ -74,56 +74,23 @@ Local:AddSlider({
 	end    
 })
 
-Local:AddTextbox({
-	Name = "WalkSpeed [Mobile]",
-	Default = "16",
-	TextDisappear = false,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
-	end	  
-})
-
-Local:AddTextbox({
-	Name = "Jump Power [Mobile]",
-	Default = "50",
-	TextDisappear = false,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
-	end	  
-})
-
-Local:AddTextbox({
-	Name = "Time [Mobile]",
-	Default = "14",
-	TextDisappear = false,
-	Callback = function(Value)
-		game.Lighting.ClockTime = UDim.new(Value / 24, 0)
-	end	  
-})
-
-Local:AddTextbox({
-	Name = "Gravity [Mobile]",
-	Default = "14",
-	TextDisappear = false,
-	Callback = function(Value)
-		workspace.Gravity = (Value)
-	end	  
-})
 
 Local:AddButton({
-	Name = "Respawn",
-	Callback = function()
-        game.Players.LocalPlayer.Character:Destroy()
-		game.Players.LocalPlayer:LoadCharacter()
-  	end    
+    Name = "Respawn",
+    Callback = function()
+              game.Players.LocalPlayer.Character:BreakJoints()
+              game.Players.LocalPlayer.Character = game.Players.LocalPlayer.Character:Clone()
+              game.Players.LocalPlayer.Character.Parent = game.Players.LocalPlayer.PlayerGui.Parent
+              print("Character has been respawned")
+      end    
 })
+
+local Local = game.Players.LocalPlayer
 
 Local:AddButton({
 	Name = "Rejoin",
 	Callback = function()
-		game.Players.LocalPlayer:Kick("Rejoining...")
-		wait(1)
-		game.Players.LocalPlayer:Rejoin()
+		game:GetService("TeleportService"):Teleport(game.PlaceId, Local)
 	end    
 })
 
