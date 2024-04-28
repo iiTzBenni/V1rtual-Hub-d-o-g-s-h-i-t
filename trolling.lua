@@ -20,6 +20,8 @@ local Section = Local:AddSection({
 	Name = "Local"
 })
 
+Local:AddParagraph("Note:","Sliders may not work for mobile, scroll down a bit if you're on mobile")
+
 Local:AddSlider({
 	Name = "WalkSpeed",
 	Min = 0,
@@ -72,7 +74,41 @@ Local:AddSlider({
 	end    
 })
 
-Local:AddParagraph("Note:","Sliders may not work for mobile, scroll all the way down if you're on mobile")
+Local:AddTextbox({
+	Name = "WalkSpeed [Mobile]",
+	Default = "16",
+	TextDisappear = false,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+	end	  
+})
+
+Local:AddTextbox({
+	Name = "Jump Power [Mobile]",
+	Default = "50",
+	TextDisappear = false,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+	end	  
+})
+
+Local:AddTextbox({
+	Name = "Time [Mobile]",
+	Default = "14",
+	TextDisappear = false,
+	Callback = function(Value)
+		game.Lighting.ClockTime = UDim.new(Value / 24, 0)
+	end	  
+})
+
+Local:AddTextbox({
+	Name = "Gravity [Mobile]",
+	Default = "14",
+	TextDisappear = false,
+	Callback = function(Value)
+		workspace.Gravity = (Value)
+	end	  
+})
 
 Local:AddButton({
 	Name = "Respawn",
