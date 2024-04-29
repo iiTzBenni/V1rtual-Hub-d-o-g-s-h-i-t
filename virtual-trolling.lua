@@ -121,7 +121,7 @@ Local:AddButton({
 Local:AddButton({
 	Name = "XRay",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastefy.app/wmcnqSrX/raw"))()
+		loadstring(game:HttpGet("https://pastebin.com/raw/jLJUi9TF"))()
 	end    
 })
 
@@ -146,6 +146,25 @@ Local:AddButton({
   	end    
 })
 
+Local:AddButton({
+	Name = "Infinite Jump",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Mirgarr/Infinite-jump-script-roblox/main/Infinite%20jump"))()
+  	end    
+})
 
+Local:AddButton({
+	Name = "ESP",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/kvr0AuWz"))()
+  	end    
+})
+
+Local:AddButton({
+	Name = "Invisibility",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))()
+  	end    
+})
 
 OrionLib:Init()
