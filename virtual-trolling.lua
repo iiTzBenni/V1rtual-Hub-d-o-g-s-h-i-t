@@ -114,7 +114,7 @@ local Section = Local:AddSection({
 Local:AddButton({
 	Name = "BTools (SS)",
 	Callback = function()
-		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+		loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
 	end    
 })
 
