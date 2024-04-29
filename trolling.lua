@@ -88,21 +88,21 @@ Local:AddButton({
 Local:AddButton({
 	Name = "Rejoin",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/yVdXMaFy"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/yVdXMaFy"))();
 	end    
 })
 
 Local:AddButton({
 	Name = "Auto Rejoin",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/iw6k8kvZ"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/iw6k8kvZ"))();
 	end    
 })
 
 Local:AddButton({
 	Name = "Join Smallest Server",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/CsKrTbdT"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/CsKrTbdT"))();
 	end    
 })
 
@@ -116,7 +116,7 @@ Local:AddButton({
 Local:AddButton({
 	Name = "Noclip",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/JBpVFq7M"))()
+		loadstring(game:HttpGet("https://pastebin.com/raw/JBpVFq7M"))();
 	end    
 })
 
