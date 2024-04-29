@@ -167,6 +167,27 @@ Local:AddButton({
   	end    
 })
 
+Local:AddButton({
+	Name = "Fly",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Flexzstr/FlyScript/main/Beta"))()
+  	end    
+})
+
+Local:AddButton({
+	Name = "Hitbox Expander",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+  	end    
+})
+
+Local:AddButton({
+	Name = "Shiftlock",
+	Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))();
+  	end    
+})
+
 local Character = Window:MakeTab({
 	Name = "Character",
 	Icon = "rbxassetid://4483345998",
@@ -178,9 +199,105 @@ local Section = Character:AddSection({
 })
 
 Character:AddButton({
-	Name = "Headless [R6 & R15]",
+	Name = "Headless & Korblox",
 	Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/H5yx10Jq'))()
+  	end    
+})
+
+Character:AddButton({
+	Name = "Fake Limiteds (SS)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/fakelimitedsv2/main/fakelimitedsv2", true))()
+  	end    
+})
+
+Character:AddButton({
+	Name = "Fake Animation Pack (FE)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+  	end    
+})
+
+local Admins = Window:MakeTab({
+	Name = "Admins",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Admins:AddSection({
+	Name = "Total Admin Scripts: 6"
+})
+
+Admins:AddParagraph("Read!","These are the most popular and most used admin scripts! Other admins script that are lesser-known will not be added.")
+
+local Section = Admins:AddSection({
+	Name = "Admin Scipts"
+})
+
+Admins:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/DarkNetworks/Infinite-Yield/main/latest.lua'))()
+  	end    
+})
+
+Admins:AddButton({
+	Name = "Nameless Admin",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
+  	end    
+})
+
+Admins:AddButton({
+	Name = "Shattervest Admin",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/KRNL2/Shattervast-Admin/main/fe"))()
+    end
+})
+
+Admins:AddButton({
+	Name = "CMD-X",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+    end
+})
+
+Admins:AddButton({
+	Name = "Reviz Admin",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/Hzw9ujiP"))()
+    end
+})
+
+Admins:AddButton({
+	Name = "Fates Admin",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+    end
+})
+
+local HubsaGUIs = Window:MakeTab({
+	Name = "Hubs and GUIs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = HubsaGUIs:AddSection({
+	Name = "Total Hubs and GUIs:"
+})
+
+HubsaGUIs:AddParagraph("Read!","Some of the hubs/guis may be outdated, cuz they are free! I will be updating them each updates.")
+
+local Section = HubsaGUIs:AddSection({
+	Name = "Hubs"
+})
+
+HubsaGUIs:AddButton({
+	Name = "Hat Hub",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/6tshcUd2"))()
+        HubsaGUIs:AddLabel("Needed hats to use the script: https://pastebin.com/0juSLTy7")
   	end    
 })
 
