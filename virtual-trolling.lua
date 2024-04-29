@@ -107,6 +107,15 @@ Local:AddButton({
 	end    
 })
 
+Local:AddButton({
+	Name = "Anti-AFK",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastefy.app/4DUFd5xu/raw"))()
+	end    
+})
+
+
+
 local Section = Local:AddSection({
 	Name = "Utility"
 })
@@ -188,6 +197,44 @@ Local:AddButton({
   	end    
 })
 
+Local:AddButton({
+	Name = "Server Stat Icons",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/qSQKxrkt", true))()
+    end    
+})
+
+Local:AddButton({
+    Name = "Chat Bypass",
+	Callback = function()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua"))({
+            Settings = {
+                Mode = "Normal", -- Type Normal for the user interface. Type "simple" to get a more simple version of BetterBypasser
+                Keybind = "G",
+                CustomBypasses = {} -- Dictionary table needed here. Not required
+            }
+        })
+    end    
+})
+
+Local:AddButton({
+    Name = "Display Name Remover",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/487rqXeE/raw"))()
+    end    
+})
+
+
+Local:AddButton({
+    Name = "Auto Clicker",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/bARQxzVL/raw"))()
+      end    
+})
+
+
+
+
 local Character = Window:MakeTab({
 	Name = "Character",
 	Icon = "rbxassetid://4483345998",
@@ -199,25 +246,47 @@ local Section = Character:AddSection({
 })
 
 Character:AddButton({
-	Name = "Headless & Korblox",
+	Name = "Headless [R6 & R15]",
 	Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/H5yx10Jq'))()
+        loadstring(game:HttpGet("https://pastefy.app/9pm9Jes2/raw"))()
   	end    
 })
 
 Character:AddButton({
-	Name = "Fake Limiteds (SS)",
+	Name = "Korblox [R15 ONLY]",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/fakelimitedsv2/main/fakelimitedsv2", true))()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Ken-Koblox-and-Headless-respawn-6712"))()
   	end    
 })
 
-Character:AddButton({
-	Name = "Fake Animation Pack (FE)",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
-  	end    
+local Section = Character:AddSection({
+    Name = "Faces [Comming soon]"
 })
+
+local HubGui = Window:MakeTab({
+    Name = "Hubs and GUIs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = HubGui:AddSection({
+    Name = "Total Hubs and GUIs:"
+})
+
+HubGui:AddParagraph("Read!","Some hubs and guis may not work as expected and outdated cuz they are free.")
+
+local Section = HubGui:AddSection({
+    Name = "Hubs"
+})
+
+HubGui:AddButton({
+    Name = "Hat Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://textbin.net/raw/rvohv1nvuf"))();
+      end    
+})
+
+
 
 local Admins = Window:MakeTab({
 	Name = "Admins",
@@ -252,7 +321,7 @@ Admins:AddButton({
 Admins:AddButton({
 	Name = "Shattervest Admin",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/KRNL2/Shattervast-Admin/main/fe"))()
+        loadstring(game:HttpGetAsync("https://pastebin.com/raw/Caniwq2N"))()
     end
 })
 
@@ -266,7 +335,7 @@ Admins:AddButton({
 Admins:AddButton({
 	Name = "Reviz Admin",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/Hzw9ujiP"))()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/pyzjWNhk'), true))()
     end
 })
 
@@ -275,30 +344,6 @@ Admins:AddButton({
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
     end
-})
-
-local HubsaGUIs = Window:MakeTab({
-	Name = "Hubs and GUIs",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = HubsaGUIs:AddSection({
-	Name = "Total Hubs and GUIs:"
-})
-
-HubsaGUIs:AddParagraph("Read!","Some of the hubs/guis may be outdated, cuz they are free! I will be updating them each updates.")
-
-local Section = HubsaGUIs:AddSection({
-	Name = "Hubs"
-})
-
-HubsaGUIs:AddButton({
-	Name = "Hat Hub",
-	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/6tshcUd2"))()
-        HubsaGUIs:AddLabel("Needed hats to use the script: https://pastebin.com/0juSLTy7")
-  	end    
 })
 
 OrionLib:Init()
