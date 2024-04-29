@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "V1rtual Hub - FE ScriptHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", 
-IntroText = "Made by Benny"})
+IntroText = "V1rtual Hub"})
 
 OrionLib:MakeNotification({
 	Name = "Thanks for using!",
@@ -127,23 +127,14 @@ local Section = Local:AddSection({
 Local:AddButton({
 	Name = "BTools (SS)",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastefy.app/xiMPyiR0/raw"))()
+		loadstring(game:HttpGet("https://pastebin.com/raw/FBKJTUyw"))();
 	end    
 })
 
 Local:AddButton({
 	Name = "XRay",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastefy.app/wmcnqSrX/raw"))();
-
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))();
-
-        OrionLib:MakeNotification({
-            Name = "XRay Successful!",
-            Content = "Press X to toggle xray!",
-            Image = "rbxassetid://4483345998",
-            Time = 5
-        })
+		loadstring(game:HttpGet("https://pastefy.app/wmcnqSrX/raw"))()
 	end    
 })
 
