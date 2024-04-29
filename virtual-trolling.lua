@@ -121,7 +121,7 @@ Local:AddButton({
 Local:AddButton({
 	Name = "XRay",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/jLJUi9TF"))()
+		loadstring(game:HttpGet("https://pastebin.com/WvAk48GZ"))()
 	end    
 })
 
@@ -180,7 +180,7 @@ local Section = Character:AddSection({
 Character:AddButton({
 	Name = "Headless [R6 & R15]",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/PewPewBoy/Korblox-and-Headless/main/The%20Script", true))()
+        loadstring(game:HttpGet('https://pastebin.com/raw/H5yx10Jq'))()
   	end    
 })
 
