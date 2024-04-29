@@ -117,7 +117,7 @@ Local:AddButton({
 		loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
 	end    
 })
-
+  
 Local:AddButton({
 	Name = "XRay",
 	Callback = function()
@@ -129,6 +129,20 @@ Local:AddButton({
 	Name = "Anti Fling",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Monster-Scripts/Anti-Fling/main/FE"))()
+  	end    
+})
+
+Local:AddButton({
+	Name = "ClickTP",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/I5BNncKK/raw"))()
+  	end    
+})
+
+Local:AddButton({
+	Name = "Explorer",
+	Callback = function()
+        loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
   	end    
 })
 
