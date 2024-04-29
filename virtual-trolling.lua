@@ -121,7 +121,7 @@ Local:AddButton({
 Local:AddButton({
 	Name = "XRay",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/WvAk48GZ"))()
+		loadstring(game:HttpGet("https://pastebin.com/raw/WvAk48GZ"))()
 	end    
 })
 
@@ -149,7 +149,7 @@ Local:AddButton({
 Local:AddButton({
 	Name = "Infinite Jump",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/y3mdVu9i"))()
+        loadstring(game:HttpGet("https://pastefy.app/w4LIHcTO/raw"))()
   	end    
 })
 
