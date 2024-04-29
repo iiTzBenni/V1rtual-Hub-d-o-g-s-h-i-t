@@ -52,7 +52,7 @@ Local:AddSlider({
 	Name = "Time",
 	Min = 0,
 	Max = 24,
-	Default = 14,
+	Default = 0,
 	Color = Color3.fromRGB(255, 179, 71),
 	Increment = 1,
 	ValueName = "Time",
@@ -95,14 +95,14 @@ Local:AddButton({
 Local:AddButton({
 	Name = "Auto Rejoin",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastefy.app/iWcPBbBD/raw"))();
+        loadstring(game:HttpGet("https://pastefy.app/iWcPBbBD/raw"))()
 	end    
 })
 
 Local:AddButton({
 	Name = "Join Smallest Server",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastefy.app/B7QW3AE7/raw"))();
+        loadstring(game:HttpGet("https://pastefy.app/B7QW3AE7/raw"))()
 	end    
 })
 
@@ -116,8 +116,42 @@ Local:AddButton({
 Local:AddButton({
 	Name = "Noclip",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastefy.app/miBjKMup/raw"))();
+		loadstring(game:HttpGet("https://pastefy.app/miBjKMup/raw"))()
 	end    
 })
+
+local Section = Local:AddSection({
+	Name = "Utility"
+})
+
+Local:AddButton({
+	Name = "BTools (SS)",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MarbleMakerMaster/AdvancedBToolsSource/main/adv_btools.lua"))()
+	end    
+})
+
+Local:AddButton({
+	Name = "XRay",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastefy.app/wmcnqSrX/raw"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+        OrionLib:MakeNotification({
+            Name = "XRay Successful!",
+            Content = "Press X to toggle xray!",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+	end    
+})
+
+Local:AddButton({
+	Name = "Anti Fling",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Monster-Scripts/Anti-Fling/main/FE"))()
+  	end    
+})
+
+
 
 OrionLib:Init()
