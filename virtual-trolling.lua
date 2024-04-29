@@ -50,9 +50,9 @@ Local:AddSlider({
 
 Local:AddSlider({
 	Name = "Time",
-	Min = 0,
+	Min = 14,
 	Max = 24,
-	Default = 0,
+	Default = 14,
 	Color = Color3.fromRGB(255, 179, 71),
 	Increment = 1,
 	ValueName = "Time",
@@ -127,15 +127,17 @@ local Section = Local:AddSection({
 Local:AddButton({
 	Name = "BTools (SS)",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/MarbleMakerMaster/AdvancedBToolsSource/main/adv_btools.lua"))()
+		loadstring(game:HttpGet("https://pastefy.app/xiMPyiR0/raw"))()
 	end    
 })
 
 Local:AddButton({
 	Name = "XRay",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastefy.app/wmcnqSrX/raw"))()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+		loadstring(game:HttpGet("https://pastefy.app/wmcnqSrX/raw"))();
+
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))();
+
         OrionLib:MakeNotification({
             Name = "XRay Successful!",
             Content = "Press X to toggle xray!",
