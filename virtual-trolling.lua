@@ -121,7 +121,7 @@ Local:AddButton({
 Local:AddButton({
 	Name = "XRay",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/WvAk48GZ"))()
+		loadstring(game:HttpGet("https://pastefy.app/wmcnqSrX/raw"))()
 	end    
 })
 
