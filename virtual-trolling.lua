@@ -49,19 +49,6 @@ Local:AddSlider({
 })
 
 Local:AddSlider({
-	Name = "Time",
-	Min = 14,
-	Max = 24,
-	Default = 14,
-	Color = Color3.fromRGB(255, 179, 71),
-	Increment = 1,
-	ValueName = "Time",
-	Callback = function(Value)
-        game.Lighting.ClockTime = UDim.new(Value)
-	end    
-})
-
-Local:AddSlider({
 	Name = "Gravity",
 	Min = 0,
 	Max = 500,
@@ -127,7 +114,7 @@ local Section = Local:AddSection({
 Local:AddButton({
 	Name = "BTools (SS)",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/FBKJTUyw"))();
+		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
 	end    
 })
 
