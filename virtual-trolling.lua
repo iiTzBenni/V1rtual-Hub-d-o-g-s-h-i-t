@@ -180,7 +180,7 @@ Local:AddButton({
 Local:AddButton({
   Name = "Fly",
   Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Flexzstr/FlyScript/main/Beta"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
     end    
 })
 
@@ -194,7 +194,7 @@ Local:AddButton({
 Local:AddButton({
   Name = "Shiftlock",
   Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))();
+        loadstring(game:HttpGet("https://pastefy.app/xhBELPBe/raw"))();
     end    
 })
 
@@ -221,7 +221,12 @@ Local:AddButton({
 Local:AddButton({
     Name = "Display Name Remover",
     Callback = function()
-        loadstring(game:HttpGet("https://pastefy.app/487rqXeE/raw"))()
+        local Players = game:GetService("Players")
+        local localPlayer = Players.LocalPlayer
+        localPlayer.CharacterAdded:Connect(function(character)
+          local humanoid = character:WaitForChild("Humanoid")
+          humanoid.DisplayName = ""  -- Set to empty string to hide the name
+        end)
     end    
 })
 
@@ -229,7 +234,8 @@ Local:AddButton({
 Local:AddButton({
     Name = "Auto Clicker",
     Callback = function()
-loadstring(game:HttpGet("https://pastefy.app/bARQxzVL/raw"))()
+        getgenv().key = "Hostile"
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/The-telligence/main/MC%20KSystem%202"))()
       end    
 })
 
@@ -330,11 +336,31 @@ HubGui:AddButton({
 })
 
 HubGui:AddButton({
-    Name = "Game Hub",
+    Name = "Nullware Hub",
     Callback = function()
-        loadstring(game:HttpGet("https://github.com/GamerScripter/Game_Hub_v2/raw/main/loader"))()
+        local LocalPlayer = game:GetService("Players").LocalPlayer
+        local Heartbeat = game:GetService("RunService").Heartbeat
+        
+        Heartbeat:Connect(function()
+            LocalPlayer.MaximumSimulationRadius = math.huge
+            sethiddenproperty(LocalPlayer, "SimulationRadius", math.huge)
+        end)
+        -- Script above is a fix to limbs falling --
+        
+        -- Nullware Hub V3 | --
+        getgenv().Theme = "Purple" -- To change the UI Theme, set this to one of the following options: "Red", "Purple", "Blue", "Green", "Yellow"
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/2d722888a388017c18028cd434c43a25/raw/dcccf1027fe4b90780e47767aaf584389c9d7771/EULma3fU90PUOKUn?identifier=".. (function()local a=""for b=1,256 do local c=math.random(1,3)a=a..string.char(c==1 and math.random(48,57)or c==2 and math.random(97,122)or c==3 and math.random(65,90))end;return a end)()))()
     end
 })
+
+HubGui:AddButton({
+    Name = "Shizzuru Hub",
+    Callback = function()
+        -- 𝘚𝘤𝘳𝘪𝘱𝘵
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/ggshizuru/myScriptHub/main/ShizzuruHub.1.lua'),true))()text/plain;charset=UTF-8
+    end
+})
+
 
 local Admins = Window:MakeTab({
   Name = "Admins",
